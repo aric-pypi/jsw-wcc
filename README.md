@@ -39,7 +39,6 @@ optional arguments:
   --quality QUALITY     quality of output images, default is 90
 ```
 
-# 效果
-`python marker.py -f ./input/test.png -m 添加水印`
-
+# preview
+`wcc -f ./input/test.png -m 添加水印`
 ![](/output/test.png?raw=true)
