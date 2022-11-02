@@ -2,6 +2,8 @@
 > 为图片添加文字水印
 > 可设置文字**大小、颜色、旋转、间隔、透明度**
 
+<img src="https://tva1.sinaimg.cn/large/008vxvgGgy1h7qtfvu71xj30uh0p6wki.jpg" width="800" />
+
 ## installation
 ```shell
 pip install jsw-wcc -U
@@ -39,6 +41,6 @@ optional arguments:
   --quality QUALITY     quality of output images, default is 90
 ```
 
-# preview
-`wcc -f ./input/test.png -m 添加水印`
-![](/output/test.png?raw=true)
+```shell
+wcc -f ./input/test.png -m 添加水印
+```
