@@ -4,14 +4,14 @@
 
 ## installation
 ```shell
-pip install jsw-wcc
+pip install jsw-wcc -U
 ```
 
 # usage
 > 需要 PIL 库 `pip install Pillow`
 
 ```
-usage: marker.py [-h] [-f FILE] [-m MARK] [-o OUT] [-c COLOR] [-s SPACE] [-a ANGLE] [--font-family FONT_FAMILY] [--font-height-crop FONT_HEIGHT_CROP] [--size SIZE]
+usage: wcc [-h] [-f FILE] [-m MARK] [-o OUT] [-c COLOR] [-s SPACE] [-a ANGLE] [--font-family FONT_FAMILY] [--font-height-crop FONT_HEIGHT_CROP] [--size SIZE]
                  [--opacity OPACITY] [--quality QUALITY]
 
 optional arguments:

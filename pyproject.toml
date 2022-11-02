@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jsw_wcc"
-version = "0.1.1"
+version = "0.1.2"
 description = "Add water mark for image based on python."
 authors = ["afeiship <1290657123@qq.com>"]
 license = "MIT"
@@ -11,7 +11,7 @@ python = "^3.10"
 Pillow = "^9.3.0"
 
 [tool.poetry.scripts]
-jsw_wcc = "jsw_wcc.main:cli"
+wcc = "jsw_wcc.main:cli"
 
 
 [build-system]
