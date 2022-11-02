@@ -123,20 +123,21 @@ def gen_mark(args):
 
 
 def cli():
-    cwd = os.getcwd()
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    font_path = os.path.join(dir_path, 'fonts', 'qnhghp.ttf')
     parse = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
     parse.add_argument("-f", "--file", type=str, help="image file path or directory")
     parse.add_argument("-m", "--mark", type=str, help="watermark content")
-    parse.add_argument("-o", "--out", default="./output", help="image output directory, default is ./output")
+    parse.add_argument("-o", "--out", default="./dist", help="image output directory, default is ./dist")
     parse.add_argument("-c", "--color", default="#8B8B1B", type=str,
                        help="text color like '#000000', default is #8B8B1B")
     parse.add_argument("-s", "--space", default=75, type=int,
                        help="space between watermarks, default is 75")
     parse.add_argument("-a", "--angle", default=30, type=int,
                        help="rotate angle of watermarks, default is 30")
-    parse.add_argument("--font-family", default="./font/qnhghp.ttf", type=str,
+    parse.add_argument("--font-family", default=font_path, type=str,
                        help=textwrap.dedent('''\
-                       font family of text, default is './font/qnhghp.ttf'
+                       font family of text, default is './fonts/qnhghp.ttf'
                        using font in system just by font file name
                        for example 'PingFang.ttc', which is default installed on macOS
                        '''))
