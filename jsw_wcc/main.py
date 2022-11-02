@@ -123,6 +123,8 @@ def gen_mark(args):
 
 
 def cli():
+    cwd = os.getcwd()
+    font_path = f'{cwd}/font/qnhghp.ttf'
     parse = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter)
     parse.add_argument("-f", "--file", type=str, help="image file path or directory")
     parse.add_argument("-m", "--mark", type=str, help="watermark content")
@@ -133,7 +135,7 @@ def cli():
                        help="space between watermarks, default is 75")
     parse.add_argument("-a", "--angle", default=30, type=int,
                        help="rotate angle of watermarks, default is 30")
-    parse.add_argument("--font-family", default="./font/qnhghp.ttf", type=str,
+    parse.add_argument("--font-family", default=font_path, type=str,
                        help=textwrap.dedent('''\
                        font family of text, default is './font/qnhghp.ttf'
                        using font in system just by font file name
