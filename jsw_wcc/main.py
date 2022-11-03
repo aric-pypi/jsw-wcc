@@ -152,7 +152,7 @@ def cli():
                        help="font size of text, default is 50")
     parse.add_argument("--opacity", default=0.15, type=float,
                        help="opacity of watermarks, default is 0.15")
-    parse.add_argument("--quality", default=80, type=int,
+    parse.add_argument("--quality", default=90, type=int,
                        help="quality of output images, default is 90")
 
     args = parse.parse_args()
